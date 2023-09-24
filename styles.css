@@ -1,3 +1,56 @@
+:root {
+	--color-bg: white;
+	--color-header: black;
+	--color-header-text: white;
+	--color-cards: gray;
+	--color-cards-text: black;
+	--color-cards-score: white;
+}
+
 body {
 	margin: 0;
+	font-family: Ubuntu;
+}
+
+.horiz, .vert {
+	box-sizing: border-box;
+	padding: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.horiz {
+	flex-direction: row;
+}
+
+.vert {
+	flex-direction: column;
+}
+.match-card {
+	border-radius: 1rem;
+	background-color: var(--color-cards);
+	width: 80vw;
+	height: 20vw;
+}
+.top-info {
+	align-items: flex-end;
+	width: calc(100% - 2rem);
+	height: 4vw;
+}
+.middle-info {
+	width: calc(100% - 2rem);
+	height: 10vw;
+}
+.bottom-info {
+	width: calc(100% - 2rem);
+	height: 4vw;
+}
+.logo-img {
+	width: 8vw;
+	height: 8vw;
+	border-radius: 1rem;
+}
+.team-name {
+	width: 40%;
 }
