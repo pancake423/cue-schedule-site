@@ -1,82 +1,24 @@
 /*
-Read match data from a database or static file, and load it into the website at runtime.
-Allow user to filter which matches are displayed based on a number of criteria.
-
-Required:
-Home Team
-Away Team
-Match scores
-Date and time
-location
-league or tournament
-Round or week information
-twitch stream or location
-
-Optional:
-Team rosters
-game scores
-VOD link (ASK ABOUT PERMANENT VODS!)
+create a match card for every match contained in data.
+ensure that the cards are sorted by date.
+scroll the page so that the first card visible is the next upcoming match.
 */
 
-function createMatchCard(m) {
-	card = document.createElement("div");
-	mainInfo = document.createElement("div");
-	subInfo = document.createElement("div");
-	timeInfo = document.createElement("div");
+window.onload = () => {
+	const parent = document.querySelector("#page-body");
+	const currentDate = getCurrentDate();
+	const currentTime = getCurrentHour();
 
-	card.className = "vert match-card";
-	mainInfo.className = "horiz middle-info";
-	subInfo.className = "horiz bottom-info";
-	timeInfo.className = "horiz top-info";
+	const matchList = DATA.toSorted((a, b) => {
+		return Math.sign(compareDate(a.matchDate, b.matchDate) * 2 + (a.matchTime - b.matchTime))
+	});
 
-	card.appendChild(timeInfo);
-	card.appendChild(mainInfo);
-	card.appendChild(subInfo);
+	var scrollIndex = matchList.findIndex((e) => compareDate(currentDate, e.matchDate) * 2 + (currentTime - e.matchTime) >= 0) - 2
+	if (scrollIndex < 0) scrollIndex = 0;
 
-	team1Logo = document.createElement("img");
-	team2Logo = document.createElement("img");
-	team1Logo.className = "logo-img";
-	team2Logo.className = "logo-img";
-	team1Logo.src = m.team1Logo;
-	team2Logo.src = m.team2Logo;
+	const cardList = matchList.map((m) => createMatchCard(m))
+	cardList.forEach((n) => parent.appendChild(n));
 
-	team1Name = document.createElement("h2");
-	team2Name = document.createElement("h2");
-	team1Name.className = "team-name";
-	team2Name.className = "team-name";
-	team1Name.innerText = m.team1Name;
-	team2Name.innerText = m.team2Name;
-
-	team1Score = document.createElement("h1");
-	team2Score = document.createElement("h1");
-
-	leagueName = document.createElement("p");
-	weekOrRound = document.createElement("p");
-	bestOf = document.createElement("p");
-	matchLocation = document.createElement("p");
-	videoLink = document.createElement("a");
-	videoType = ""; // stream, vod, none
-
-	matchDate = document.createElement("p");
-	matchTime = document.createElement("p");
-
-	timeInfo.appendChild(matchDate);
-	timeInfo.appendChild(matchTime);
-
-	mainInfo.appendChild(team1Logo);
-	mainInfo.appendChild(team1Name);
-	mainInfo.appendChild(team1Score);
-	mainInfo.appendChild(team2Score);
-	mainInfo.appendChild(team2Name);
-	mainInfo.appendChild(team2Logo);
-
-	subInfo.appendChild(leagueName);
-	subInfo.appendChild(weekOrRound);
-	subInfo.appendChild(bestOf);
-	subInfo.appendChild(matchLocation)
-	subInfo.appendChild(videoLink);
-	
-
-	return card;
+	cardList[scrollIndex].scrollIntoView(true);
 }
 
