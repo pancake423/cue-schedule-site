@@ -4,8 +4,16 @@ function createMatchCard(m) {
 	subInfo = document.createElement("div");
 	timeInfo = document.createElement("div");
 
-	card.className = "vert match-card";
-	mainInfo.className = "horiz middle-info";
+	let dateComp = compareDate(getCurrentDate(), m.matchDate);
+	let cardShadow = "shadow-complete";
+	if (dateComp < 0) {
+		cardShadow = "shadow-upcoming";
+	} else if (dateComp == 0) {
+		cardShadow = "shadow-today";
+	}
+	card.className = "vert match-card " + cardShadow;
+	//m.cardColor
+	mainInfo.className = `horiz middle-info ${m.cardColor}`;
 	subInfo.className = "horiz bottom-info";
 	timeInfo.className = "horiz top-info";
 
@@ -32,6 +40,9 @@ function createMatchCard(m) {
 	team1Score.innerText = m.team1Score;
 	team2Score.innerText = m.team2Score;
 
+	spacer = document.createElement("div");
+	spacer.style.width = "10rem";
+
 	leagueName = document.createElement("p");
 	leagueName.innerText = m.leagueName;
 
@@ -39,13 +50,14 @@ function createMatchCard(m) {
 	weekOrRound.innerText = m.weekOrRound;
 
 	bestOf = document.createElement("p");
-	bestOf.innerText = m.bestOf;
+	bestOf.innerText = "Bo" + m.bestOf;
 
 	matchLocation = document.createElement("p");
 	matchLocation.innerText = m.matchLocation;
 
 	videoLink = document.createElement("a");
 	videoLink.innerText = m.videoLink;
+	videoLink.href = m.videoLink;
 
 	matchDate = document.createElement("p");
 	matchDate.innerText = m.matchDate;
@@ -58,6 +70,7 @@ function createMatchCard(m) {
 	mainInfo.appendChild(team1Logo);
 	mainInfo.appendChild(team1Name);
 	mainInfo.appendChild(team1Score);
+	mainInfo.appendChild(spacer);
 	mainInfo.appendChild(team2Score);
 	mainInfo.appendChild(team2Name);
 	mainInfo.appendChild(team2Logo);

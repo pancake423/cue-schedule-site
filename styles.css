@@ -1,23 +1,53 @@
-:root {
-	--color-bg: white;
-	--color-header: black;
-	--color-header-text: white;
-	--color-cards: gray;
-	--color-cards-text: black;
-	--color-cards-score: white;
-}
-
 body {
 	margin: 0;
 	font-family: Ubuntu;
+	background-image: url(graffiti.jpg);
+	backdrop-filter: grayscale(1) blur(1px) contrast(0.1) brightness(1.8);
+	position: absolute;
+	width: 100%;
+}
+p {
+	margin: 0;
 }
 
+#page-header {
+	background-color: white;
+	color: black;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 10vh;
+	border-bottom: 1px solid gray;
+}
+#page-body {
+	padding-block: 2rem;
+
+}
+.header-img {
+	height: 8vh;
+}
 .horiz, .vert {
 	box-sizing: border-box;
 	padding: 0.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
+}
+
+.gap {
+	gap: 2rem;
+}
+
+.maroon {
+	background-color: #691c0d;
+	color: white;
+	border-radius: 1rem;
+}
+.black {
+	background-color: #21201f;
+	color: white;
+	border-radius: 1rem;
 }
 
 .horiz {
@@ -29,28 +59,42 @@ body {
 }
 .match-card {
 	border-radius: 1rem;
-	background-color: var(--color-cards);
 	width: 80vw;
-	height: 20vw;
+	height: 15vw;
+	background-color: white;
+	border: 1px solid gray;
+}
+.shadow-complete {
+	box-shadow: -5px 0px 0px red;
+}
+.shadow-upcoming {
+	box-shadow: -5px 0px 0px gray;
+}
+.shadow-today {
+	box-shadow: -5px 0px 0px green;
 }
 .top-info {
-	align-items: flex-end;
+	justify-content: flex-end;
+	gap: 2rem;
 	width: calc(100% - 2rem);
-	height: 4vw;
+	height: 2vw;
 }
 .middle-info {
 	width: calc(100% - 2rem);
-	height: 10vw;
+	height: 7vw;
 }
 .bottom-info {
 	width: calc(100% - 2rem);
-	height: 4vw;
+	height: 2vw;
+	justify-content: flex-start;
+	gap: 2rem;
 }
 .logo-img {
-	width: 8vw;
-	height: 8vw;
+	width: 6vw;
+	height: 6vw;
 	border-radius: 1rem;
 }
 .team-name {
-	width: 40%;
+	width: 30%;
+	text-align: center;
 }

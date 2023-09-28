@@ -13,6 +13,7 @@ window.onload = () => {
 		return Math.sign(compareDate(a.matchDate, b.matchDate) * 2 + (a.matchTime - b.matchTime))
 	});
 
+
 	var scrollIndex = matchList.findIndex((e) => compareDate(currentDate, e.matchDate) * 2 + (currentTime - e.matchTime) >= 0) - 2
 	if (scrollIndex < 0) scrollIndex = 0;
 
