@@ -144,8 +144,8 @@ DATA = [
 	leagueName: "NECC",
 	weekOrRound: "week 1",
 	bestOf: 5,
-	matchLocation: "Esports Arena",
-	videoLink: "https://www.twitch.tv/concorduesports",
+	matchLocation: "online",
+	videoLink: "https://www.twitch.tv/et_home",
 	matchDate: "9/29/2023",
 	matchTime: 20, //time in 24 hour clock. converted to AM/PM
 	cardColor: "maroon"
