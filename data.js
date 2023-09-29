@@ -249,6 +249,22 @@ DATA = [
 },
 {
 	team1Logo: "logos/concord.png",
+	team2Logo: "logos/wesleyan.png",
+	team1Name: "Concord Univeristy Black",
+	team2Name: "Virginia Wesleyan University",
+	team1Score: "0",
+	team2Score: "0",
+	leagueName: "ECAC",
+	weekOrRound: "week 2",
+	bestOf: 7,
+	matchLocation: "online",
+	videoLink: "TBD",
+	matchDate: "10/11/2023",
+	matchTime: 18, //time in 24 hour clock. converted to AM/PM
+	cardColor: "black"
+},
+{
+	team1Logo: "logos/concord.png",
 	team2Logo: "logos/sacred.png",
 	team1Name: "Concord Univeristy Black",
 	team2Name: "Sacred Heart University",
@@ -344,6 +360,22 @@ DATA = [
 	cardColor: "black"
 },
 //BLACK NECC======================================================================================
+{
+	team1Logo: "logos/ballstate.png",
+	team2Logo: "logos/concord.png",
+	team1Name: "Ball State Black",
+	team2Name: "Concord University Black",
+	team1Score: "0",
+	team2Score: "0",
+	leagueName: "NECC",
+	weekOrRound: "week 1",
+	bestOf: 5,
+	matchLocation: "online",
+	videoLink: "TBD",
+	matchDate: "10/12/2023",
+	matchTime: 19, //time in 24 hour clock. converted to AM/PM
+	cardColor: "black"
+},
 {
 	team1Logo: "logos/concord.png",
 	team2Logo: "logos/lmc.png",
