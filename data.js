@@ -15,8 +15,8 @@ DATA = [
 	leagueName: "ECAC",
 	weekOrRound: "week 1",
 	bestOf: 7,
-	matchLocation: "online",
-	videoLink: "https://www.twitch.tv/et_home",
+	matchLocation: "Esports Arena",
+	videoLink: "https://www.twitch.tv/concorduesports",
 	matchDate: "10/04/2023",
 	matchTime: 20, //time in 24 hour clock. converted to AM/PM
 	cardColor: "maroon"
