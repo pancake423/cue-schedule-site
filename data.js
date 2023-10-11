@@ -32,9 +32,9 @@ DATA = [
 	weekOrRound: "week 2",
 	bestOf: 7,
 	matchLocation: "online",
-	videoLink: "https://www.twitch.tv/et_home",
+	videoLink: "https://www.twitch.tv/esportsu",
 	matchDate: "10/11/2023",
-	matchTime: 20, //time in 24 hour clock. converted to AM/PM
+	matchTime: 19, //time in 24 hour clock. converted to AM/PM
 	cardColor: "maroon"
 },
 {
