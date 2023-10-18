@@ -216,6 +216,22 @@ DATA = [
 },
 //BLACK ECAC======================================================================================
 //ECAC schedules are currently broken for the contenders division- only week 1 is published.
+{
+	team1Logo: "logos/concord.png",
+	team2Logo: "logos/keanuniversity.jpg",
+	team1Name: "Concord University Black",
+	team2Name: "Kean University",
+	team1Score: "0",
+	team2Score: "0",
+	leagueName: "ECAC",
+	weekOrRound: "week 3",
+	bestOf: 7,
+	matchLocation: "online",
+	videoLink: "TBD",
+	matchDate: "10/18/2023",
+	matchTime: 20, //time in 24 hour clock. converted to AM/PM
+	cardColor: "black"
+},
 //BLACK NECC======================================================================================
 {
 	team1Logo: "logos/ballstate.png",
