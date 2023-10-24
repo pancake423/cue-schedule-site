@@ -64,7 +64,7 @@ DATA = [
 	weekOrRound: "week 4",
 	bestOf: 7,
 	matchLocation: "online",
-	videoLink: "https://www.twitch.tv/et_home",
+	videoLink: "TBD",
 	matchDate: "10/25/2023",
 	matchTime: 20, //time in 24 hour clock. converted to AM/PM
 	cardColor: "maroon"
@@ -80,7 +80,7 @@ DATA = [
 	weekOrRound: "week 5",
 	bestOf: 7,
 	matchLocation: "online",
-	videoLink: "https://www.twitch.tv/et_home",
+	videoLink: "TBD",
 	matchDate: "11/1/2023",
 	matchTime: 20, //time in 24 hour clock. converted to AM/PM
 	cardColor: "maroon"
@@ -96,7 +96,7 @@ DATA = [
 	weekOrRound: "week 6",
 	bestOf: 7,
 	matchLocation: "online",
-	videoLink: "https://www.twitch.tv/et_home",
+	videoLink: "TBD",
 	matchDate: "11/8/2023",
 	matchTime: 20, //time in 24 hour clock. converted to AM/PM
 	cardColor: "maroon"
@@ -112,7 +112,7 @@ DATA = [
 	weekOrRound: "week 7",
 	bestOf: 7,
 	matchLocation: "online",
-	videoLink: "https://www.twitch.tv/et_home",
+	videoLink: "TBD",
 	matchDate: "11/15/2023",
 	matchTime: 20, //time in 24 hour clock. converted to AM/PM
 	cardColor: "maroon"
@@ -156,7 +156,7 @@ DATA = [
 	team1Name: "Concord University Maroon",
 	team2Name: "Juniata College",
 	team1Score: "0",
-	team2Score: "0",
+	team2Score: "3",
 	leagueName: "NECC",
 	weekOrRound: "week 3",
 	bestOf: 5,
@@ -270,7 +270,7 @@ DATA = [
 	team2Logo: "logos/concord.png",
 	team1Name: "Northern Kentucky Univeristy",
 	team2Name: "Concord University Black",
-	team1Score: "0",
+	team1Score: "3",
 	team2Score: "0",
 	leagueName: "NECC",
 	weekOrRound: "week 3",
