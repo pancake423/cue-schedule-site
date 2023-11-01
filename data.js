@@ -58,8 +58,8 @@ DATA = [
 	team2Logo: "logos/iona.png",
 	team1Name: "Concord University Marooon",
 	team2Name: "Iona University Gold",
-	team1Score: "0",
-	team2Score: "0",
+	team1Score: "4",
+	team2Score: "1",
 	leagueName: "ECAC",
 	weekOrRound: "week 4",
 	bestOf: 7,
@@ -82,7 +82,7 @@ DATA = [
 	matchLocation: "online",
 	videoLink: "TBD",
 	matchDate: "11/1/2023",
-	matchTime: 20, //time in 24 hour clock. converted to AM/PM
+	matchTime: 19, //time in 24 hour clock. converted to AM/PM
 	cardColor: "maroon"
 },
 {
@@ -178,8 +178,8 @@ DATA = [
 	bestOf: 5,
 	matchLocation: "Esports Arena",
 	videoLink: "https://www.twitch.tv/concorduesports",
-	matchDate: "10/27/2023",
-	matchTime: 20, //time in 24 hour clock. converted to AM/PM
+	matchDate: "11/3/2023",
+	matchTime: 21, //time in 24 hour clock. converted to AM/PM
 	cardColor: "maroon"
 },
 {
@@ -286,7 +286,7 @@ DATA = [
 	team2Logo: "logos/murray.png",
 	team1Name: "Concord University Black",
 	team2Name: "Murray State",
-	team1Score: "0",
+	team1Score: "3",
 	team2Score: "0",
 	leagueName: "NECC",
 	weekOrRound: "week 4",
